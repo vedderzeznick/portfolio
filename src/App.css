@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: var(--image-gradient), url(./Assets/BackgroundProfileWeb.gif);
 }
 
 .App-logo {
@@ -35,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main-text{
+  color: #3295f8
+}
+
+.second-text{
+  color: #32c7f8
 }

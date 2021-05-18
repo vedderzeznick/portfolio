@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/profile.png";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tilt from "react-parallax-tilt";
@@ -12,34 +12,36 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="main-text"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm an electronics engineer 🔌🤖 and software developer 👨🏻‍💻🖥️ with two years of proffesional experience in the field.
+              My passion for programming started when I was at college. I realized that I could complement my knowledge and give more value to my electric and electronic projects by developing software.
+              Since then I fell in love with it and I haven't stop learning.
               <br />
-              <br />I am fluent in classics like
+              <br />I have professional experience with &nbsp;
               <i>
-                <b className="purple"> C++, Python and Javascript. </b>
+                <b className="second-text"> Javascript, Java, Kotlin, Dart, C#, Python </b>
               </i>
               <br />
               <br />
-              My current focus is on &nbsp;
+              Recently I've been focused on: &nbsp;
               <i>
-                <b className="purple">
-                  Deep Learning and Natural Language Processing.
+                <b className="second-text">
+                  Mobile App Developing using Flutter or React-Native
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with
+              I feel confortable using modern JS Frameworks like &nbsp;
               <i>
-                <b className="purple"> Modern Javascript Frameworks</b>
+                <b className="second-text"> Node.js, React.js, AngularJS </b>
               </i>
-                &nbsp; like
+              <br />
+              <br />
+              Also I have used relational and no relational databases like &nbsp;
               <i>
-                <b className="purple"> Node.js and React.js</b>
+                <b className="second-text"> SQL Server and MongoDB </b>
               </i>
             </p>
           </Col>
@@ -53,7 +55,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="second-text">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
