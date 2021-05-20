@@ -1,7 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import "../../style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function AboutCard() {
   return (
@@ -13,7 +11,7 @@ function AboutCard() {
             I'm 26 years old and I live in <span className="purple"> Quito, Ecuador.</span>
             <br />I am a software developer and electronics engineer, graduted from one the best colleges in my country.
             <br />Since 2019 I've worked and collaborated on several projects using diferent kinds of technologies in frontend, backend or databases handling.
-            <br />Also I have electronic skills in the field of instrumentation, automationa and renewable energy (Photovoltaic).
+            <br />Also I have electronic skills in the field of instrumentation, automation and renewable energy (Photovoltaic).
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
@@ -29,10 +27,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ marginBlockEnd: 0, color: "#3295f8ad" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer style={{ marginBlockEnd: 0, color: "#3295f8ad" }}>Soumyajit</footer>
+          
         </blockquote>
       </Card.Body>
     </Card>

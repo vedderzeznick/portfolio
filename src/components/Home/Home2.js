@@ -4,6 +4,12 @@ import myImg from "../../Assets/profile.png";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tilt from "react-parallax-tilt";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -65,7 +71,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-github"></i>
+                  <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
@@ -75,7 +81,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-twitter"></i>
+                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
@@ -85,7 +91,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
@@ -95,7 +101,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <AiFillInstagram />
                 </a>
               </li>
             </ul>
