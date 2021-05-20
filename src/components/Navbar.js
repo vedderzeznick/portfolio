@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../Assets/image.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -49,7 +48,7 @@ function NavBar() {
           <object
           style={{width: "850px", height: "600px"}}
           data={docpdf}
-          />
+          >PDF</object>
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggleModal}>Back</Button>

@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
   AiFillFacebook
 } from "react-icons/ai";
