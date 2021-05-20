@@ -340,6 +340,7 @@ html {
 }
 
 .home-about-social-links {
+  z-index: 999;
   justify-content: center !important;
   padding-top: 15px !important;
   display: inline-block !important;
@@ -409,6 +410,7 @@ html {
 }
 
 .footer-body {
+  z-index: 999;
   text-align: center !important;
 }
 
@@ -418,6 +420,7 @@ html {
   }
 
   .footer-body {
+    z-index: 999;
     text-align: center !important;
   }
 }

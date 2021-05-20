@@ -15,11 +15,15 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import docpdf from '../Assets/cvenglish.pdf';
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+
+  const toggleModal = () => setOpenModal(!openModal);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -39,6 +43,18 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
+      <Modal isOpen={openModal} toggle={toggleModal} style={{margin: "50px 200px", width: "800px"}}>
+        <ModalHeader toggle={toggleModal}>Martín Alarcón - CV 2021</ModalHeader>
+        <ModalBody >
+          <object
+          style={{width: "850px", height: "600px"}}
+          data={docpdf}
+          />
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={toggleModal}>Back</Button>
+        </ModalFooter>
+      </Modal>
         <Navbar.Brand href="/">
           <img src={logo} alt="brand"  width="70" />
         </Navbar.Brand>
@@ -80,24 +96,14 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
+            
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
+                onClick={()=>toggleModal()}
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <AiFillStar style={{ fontSize: "1.1em" }} /> Watch CV
               </Button>
             </Nav.Item>
           </Nav>

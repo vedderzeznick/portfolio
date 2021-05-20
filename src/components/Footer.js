@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillFacebook
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -23,7 +24,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/vedderzeznick"
                 style={{ color: "white" }}
               >
                 <AiFillGithub />
@@ -31,15 +32,15 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
+                href="https://www.facebook.com/martin.alarconaguirre/"
                 style={{ color: "white" }}
               >
-                <AiOutlineTwitter />
+                <AiFillFacebook />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
+                href="https://www.linkedin.com/in/martín-alarcón-778807199"
                 style={{ color: "white" }}
               >
                 <FaLinkedinIn />
@@ -47,7 +48,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
+                href="https://www.instagram.com/vedderzeznick/"
                 style={{ color: "white" }}
               >
                 <AiFillInstagram />

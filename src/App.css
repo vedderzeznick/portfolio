@@ -45,3 +45,8 @@
 .second-text{
   color: #32c7f8
 }
+
+.modal-content {
+  width: 900px !important;
+  height: 800px !important;
+}
