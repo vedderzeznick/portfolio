@@ -54,9 +54,9 @@ function Projects() {
   ]
 
   const openImageViewer = useCallback((tipo) => {
-    if(tipo == "1"){
+    if(tipo === "1"){
       setImagesArray(doctorImages);
-    }else if(tipo == "2"){
+    }else if(tipo === "2"){
       setImagesArray(wasteImages);
     }else{
       setImagesArray(lightingImages);
