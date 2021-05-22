@@ -62,6 +62,7 @@ function NavBar() {
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
+          style={{color:"#33c6f7"}}
         >
           <span></span>
           <span></span>
