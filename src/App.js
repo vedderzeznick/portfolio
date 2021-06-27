@@ -64,7 +64,7 @@ function App() {
               bubble: {
                 distance: 400,
                 duration: 2,
-                opacity: 0.8,
+                opacity: 0.2,
                 size: 40,
               },
               push: {
@@ -84,7 +84,7 @@ function App() {
               color: "#ffffff",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.2,
               width: 1,
             },
             collisions: {
@@ -95,7 +95,7 @@ function App() {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 3,
+              speed: 5,
               straight: false,
             },
             number: {
@@ -106,7 +106,7 @@ function App() {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.2,
             },
             shape: {
               type: "circle",

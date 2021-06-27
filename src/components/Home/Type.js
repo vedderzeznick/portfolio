@@ -7,10 +7,11 @@ function Type() {
       style={{color: '#3295f8'}}
       options={{
         strings: [
-          "Electronics Engineer",
+          
           "Web App Developer",
           "Mobile App Developer",
           "Open Source Contributor",
+          "Electronics Engineer",
         ],
         autoStart: true,
         loop: true,
