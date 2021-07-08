@@ -46,7 +46,7 @@ function App() {
               value: "#192027",
             },
           },
-          fpsLimit: 60,
+          fpsLimit: 30,
           interactivity: {
             detectsOn: "canvas",
             events: {
@@ -68,7 +68,7 @@ function App() {
                 size: 40,
               },
               push: {
-                quantity: 4,
+                quantity: 3,
               },
               repulse: {
                 distance: 200,
@@ -103,7 +103,7 @@ function App() {
                 enable: true,
                 value_area: 800,
               },
-              value: 80,
+              value: 50,
             },
             opacity: {
               value: 0.2,
