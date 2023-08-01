@@ -254,7 +254,6 @@ html {
 .home-section {
   position: relative;
   z-index: -1;
-  /*background-image: var(--image-gradient), url(./Assets/BackgroundProfileWeb.gif);*/
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;

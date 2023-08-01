@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ImageViewer from 'react-simple-image-viewer';
@@ -9,7 +8,6 @@ import ImageViewer from 'react-simple-image-viewer';
 import medicine from "../../Assets/Projects/modern-medicine.jpeg";
 import waste from "../../Assets/Projects/waste-manage.png";
 import lighting from "../../Assets/Projects/lighting-system.png";
-
 
 import doctor1 from "../../Assets/doctor/agenda_consulta.png";
 import doctor2 from "../../Assets/doctor/agenda.png";
@@ -43,6 +41,11 @@ import Solar7 from "../../Assets/Solar/IMG_20191216_104359.jpg";
 import Solar8 from "../../Assets/Solar/IMG_20191216_105625.jpg";
 import Solar9 from "../../Assets/Solar/IMG_20200113_100053.jpg";
 
+import BES1 from "../../Assets/BES.jpg"
+import BES3 from "../../Assets/BES/BES3.png"
+import BES4 from "../../Assets/BES/BES4.png"
+import BES5 from "../../Assets/BES/BES5.png"
+
 function Projects() {
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -65,17 +68,22 @@ function Projects() {
     Solar1, Solar2, Solar3, Solar4, Solar5, Solar6, Solar7, Solar8, Solar9
   ]
 
+  const BESImages = [
+    BES3, BES4, BES5
+  ]
+
   const openImageViewer = useCallback((tipo) => {
-    if(tipo === "1"){
+    if (tipo === "0") {
+      setImagesArray(BESImages)
+    }else if(tipo === "1"){
       setImagesArray(doctorImages);
     }else if(tipo === "2"){
       setImagesArray(wasteImages);
-    }else if(tipo == "3"){
+    }else if(tipo === "3"){
       setImagesArray(lightingImages);
     }else{
       setImagesArray(solarImages)
     }
-    console.log('open viewer', tipo)
     setIsViewerOpen(true);
   }, []);
 
@@ -96,7 +104,6 @@ function Projects() {
           onClose={ closeImageViewer }
         />
       )}
-      <Particle />
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -105,6 +112,15 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BES1}
+              isBlog={false}
+              title="Brightview Enterprise Solutions Connect - Web Portal"
+              description="This Solution manages all the data related to work orders, locations, clients, etc, in the landscaping service that Brightview offers to the public around the country (All design rights reserved to Automated Decision)"
+              openViewer={()=>openImageViewer("0")}
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={medicine}

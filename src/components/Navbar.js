@@ -42,11 +42,11 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-      <Modal isOpen={openModal} toggle={toggleModal} style={{margin: "50px 200px", width: "800px"}}>
-        <ModalHeader toggle={toggleModal}>Martín Alarcón - CV 2021</ModalHeader>
-        <ModalBody >
+      <Modal isOpen={openModal} toggle={toggleModal} style={{ display: "flex" }}>
+        <ModalHeader toggle={toggleModal}>Martín Alarcón - CV 2023</ModalHeader>
+        <ModalBody style={{ minWidth: '800px' }} >
           <object
-          style={{width: "850px", height: "600px"}}
+          style={{ width: '775px', minHeight: '600px' }}
           data={docpdf}
           >PDF</object>
         </ModalBody>

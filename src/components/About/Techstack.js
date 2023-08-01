@@ -9,7 +9,7 @@ import {
   DiCss3,
   DiBootstrap
 } from "react-icons/di";
-import { SiCsharp, SiFlutter, SiKotlin, SiMaterialUi, SiFirebase } from "react-icons/si";
+import { SiCsharp, SiFlutter, SiKotlin, SiMui, SiFirebase } from "react-icons/si";
 import { UncontrolledTooltip } from 'reactstrap';
 
 function Techstack() {
@@ -65,7 +65,7 @@ function Techstack() {
         CSS 3
       </UncontrolledTooltip>
       <Col id="materialicon" xs={4} md={2} className="tech-icons">
-        <SiMaterialUi />
+        <SiMui />
       </Col>
       <UncontrolledTooltip placement="top" target="materialicon">
         MaterialUI

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: var(--image-gradient), url(./Assets/BackgroundProfileWeb.gif);
+  background-color: #0000;
 }
 
 .App-logo {
@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

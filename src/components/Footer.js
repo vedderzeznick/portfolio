@@ -31,7 +31,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.facebook.com/martin.alarconaguirre/"
+                href="https://www.facebook.com/martin.alarconaguirre"
                 style={{ color: "white" }}
               >
                 <AiFillFacebook />
@@ -39,7 +39,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/martín-alarcón-778807199"
+                href="https://www.linkedin.com/in/martin-fullstack"
                 style={{ color: "white" }}
               >
                 <FaLinkedinIn />
