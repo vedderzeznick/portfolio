@@ -46,7 +46,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              I have proffesional experience using relational and no relational databases &nbsp;
+              I have professional experience using relational and no relational databases &nbsp;
               <i>
                 <b className="second-text"> SQL Server and MongoDB </b>
               </i>
